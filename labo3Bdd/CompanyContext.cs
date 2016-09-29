@@ -11,7 +11,7 @@ namespace labo3Bdd
     {
 
         public DbSet<Customer> Customer { get; set; }
-        public CompanyContext():base(@"Data Source=(localdb)\MSSQLLocalDb; Initial Catalog=labo3Db")
+        public CompanyContext():base(@"Data Source=(localdb)\MSSQLLocalDb;Initial Catalog=ConcurrencyDemo;")
         {
 
         }

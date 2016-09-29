@@ -15,7 +15,7 @@ namespace UnitTestProjectLabo3
             Customer customer = new labo3Bdd.Customer()
             {
                 Name = "Ferrer Lucas",
-                Adresseline1 = "Rue du trichon 7",
+                AdresseLine1 = "Rue du trichon 7",
                 City = "Nil-Saint-Vincent",
                 Country = "Belgique",
                 EMail = "skyli7h@gmail.com",

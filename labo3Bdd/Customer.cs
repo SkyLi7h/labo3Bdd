@@ -8,15 +8,15 @@ namespace labo3Bdd
 {
     public class Customer
     {
-        public double AccountBalance;
-        public string Adresseline1;
-        public string Adresseline2;
-        public string City;
-        public string Country;
-        public string EMail;
-        public long Id;
-        public string Name;
-        public string PostCode;
-        public string Remark;
+        public double AccountBalance { get; set; }
+        public string AdresseLine1 { get; set; }
+        public string AdresseLine2 { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+        public string EMail { get; set; }
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public string PostCode { get; set; }
+        public string Remark { get; set; }
     }
 }

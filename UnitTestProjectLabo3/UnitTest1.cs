@@ -2,17 +2,13 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data.Entity;
 using labo3Bdd;
+using System.Linq;
 
 namespace UnitTestProjectLabo3
 {
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-
-        }
 
         [TestInitialize]
         public void Setup()
@@ -22,6 +18,21 @@ namespace UnitTestProjectLabo3
             {
                 context.Database.Initialize(true);
             }
+        }
+
+        [TestMethod]
+        public void CanGetCustomers()
+        {
+            using (var context = GetContext())
+            {
+                Assert.AreEqual(1, context.Customer.ToList().Count);
+            }
+
+        }
+
+        public CompanyContext GetContext()
+        {
+            return new CompanyContext();
         }
     }
 }
