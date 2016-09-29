@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace labo3Bdd
 {
-    class Customer
+    public class Customer
     {
-        private double AccountBalance;
-        private string Adresseline1;
-        private string Adresseline2;
-        private string City;
-        private string Country;
-        private string EMail;
-        private long Id;
-        private string Name;
-        private string PostCode;
-        private string Remark;
+        public double AccountBalance;
+        public string Adresseline1;
+        public string Adresseline2;
+        public string City;
+        public string Country;
+        public string EMail;
+        public long Id;
+        public string Name;
+        public string PostCode;
+        public string Remark;
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace labo3Bdd
 {
-    class CompanyContext : DbContext
+    public class CompanyContext : DbContext
     {
 
         public DbSet<Customer> Customer { get; set; }
